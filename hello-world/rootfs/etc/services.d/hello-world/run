@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/command/with-contenv bash
 echo "Hello World desde mi primer add-on en Home Assistant!"
 # Mantener el proceso vivo
 tail -f /dev/null

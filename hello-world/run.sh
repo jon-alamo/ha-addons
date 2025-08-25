@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-echo "Hello World desde mi primer add-on en Home Assistant!"
-sleep 3600
