@@ -1,6 +1,6 @@
 {
     "name": "Hello World Add-on",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "slug": "hello_world",
     "description": "Un simple add-on que imprime Hello World",
     "startup": "application",
