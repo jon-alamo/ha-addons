@@ -1,12 +1,8 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/armv7-base:latest
+ARG BUILD_FROM
 FROM $BUILD_FROM
 
-LABEL maintainer="Tu Nombre <tu.email@example.com>"
+# Copy data for add-on
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-# Copiar rootfs (con servicios supervisados)
-COPY rootfs /
-
-RUN chmod +x /etc/services.d/hello-world/run
-
-# No necesitas CMD, s6-overlay lo maneja
-CMD [ "/init" ]
+CMD [ "/run.sh" ]

@@ -1,4 +1,0 @@
-#!/usr/bin/with-contenv bash
-echo "Hello World desde mi primer add-on en Home Assistant!"
-# Mantener el proceso vivo
-sleep infinity
