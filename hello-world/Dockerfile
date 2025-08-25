@@ -8,8 +8,5 @@ COPY rootfs /
 
 RUN chmod +x /etc/services.d/hello-world/run
 
-# Set S6_CMD_ARG0
-ENV S6_CMD_ARG0 /usr/bin/env
-
 # No necesitas CMD, s6-overlay lo maneja
 CMD [ "/init" ]
